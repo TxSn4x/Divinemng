@@ -5,7 +5,7 @@ from SONALI_MUSIC import app
 
 #--------------------------
 
-MUST_JOIN = "kriti_bot_update"
+MUST_JOIN = "kittuu_updates"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
@@ -26,8 +26,8 @@ async def must_join_channel(app: Client, msg: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/KRITI_SUPPORT_GROUP"),
-                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/kriti_bot_update"),
+                        
+                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/kittuu_updates"),
                             ]
                         ]
                     )
