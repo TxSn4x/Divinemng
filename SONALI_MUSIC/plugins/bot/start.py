@@ -25,8 +25,8 @@ from SONALI_MUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
  
-NEXIO_VID = [
-          "https://files.catbox.moe/du8ylb.mp4",
+NEXIO = [
+          "https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
 ]
  
 @app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
