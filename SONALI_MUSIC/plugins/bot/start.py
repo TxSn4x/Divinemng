@@ -25,7 +25,7 @@ from SONALI_MUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
  
-NEXI_VID = [
+NEXIO = [
           "https://files.catbox.moe/du8ylb.mp4",
 ]
  
