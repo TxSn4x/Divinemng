@@ -8,13 +8,13 @@ BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url
 
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
 SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"
-LEZBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
+LESBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
 BIGBALL = "https://i.gifer.com/8ZUg.gif"
 LANG = "https://telegra.ph/file/423414459345bf18310f5.gif"
 CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
 SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"
-LEZBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
+LESBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
 BIGBALL = "https://i.gifer.com/8ZUg.gif"
 LANG = "https://telegra.ph/file/423414459345bf18310f5.gif"
 CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
@@ -40,13 +40,13 @@ async def gay(_, message):
     await message.reply_text(GAY, reply_markup=BUTTON, disable_web_page_preview=True, quote=True)
 
 
-@app.on_message(filters.command("lezbian"))
+@app.on_message(filters.command("lesbian"))
 async def lezbian(_, message):
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     mention = f"[{user_name}](tg://user?id={user_id})"
     mm = random.randint(1, 100)
-    FEK = f"**💜** {mention} **ɪꜱ** {mm}**% ʟᴇᴢʙɪᴀɴ!**"
+    FEK = f"**💜** {mention} **ɪꜱ** {mm}**% ʟᴇsʙɪᴀɴ!**"
     await message.reply_text(FEK, reply_markup=BUTTON, disable_web_page_preview=True, quote=True)
 
 
