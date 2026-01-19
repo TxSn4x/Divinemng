@@ -36,7 +36,7 @@ async def check_video_chat(chat_id):
         await asyncio.sleep(10)  # हर 10 सेकंड में चेक करें
 
 # जब बॉट किसी ग्रुप में ऐड हो तो ऑटो स्टार्ट हो
-@app.on_message(filters.command("start") & filters.group)
+@app.on_message(filters.command("vclog") & filters.group)
 async def start_video_check(client, message):
     chat_id = message.chat.id
     if chat_id not in video_chat_users:
