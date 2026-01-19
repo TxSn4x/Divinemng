@@ -139,7 +139,7 @@ class Helper(object):
 ❖ sᴛɪᴄᴋєʀs ᴄσϻϻᴧηᴅꜱ ❖```
 **❍ /packkang ➠ ᴄʀєᴧᴛєs ᴧ ᴘᴧᴄᴋ σғ sᴛɪᴄᴋєʀs ғʀσϻ ᴧ σᴛʜєʀ ᴘᴧᴄᴋ
 ❍ /stickerid ➠ ɢєᴛs ᴛʜє sᴛɪᴄᴋєʀ ɪᴅ σғ ᴧ sᴛɪᴄᴋєʀ
-❍ /mmf ➠ ʀєᴘʟʏ ᴧηʏ ᴘɪᴄ & ɢɪᴠє ᴛєxᴛ `єx :- /mmf toxic`
+❍ /mmf ➠ ʀєᴘʟʏ ᴧηʏ ᴘɪᴄ & ɢɪᴠє ᴛєxᴛ `єx :- /mmf neo`
 ❍ /kang ➠ ʀєᴘʟʏ ᴧηʏ sᴛɪᴄᴋєʀ & ᴄʀєᴀᴛє ʏσᴜʀ sᴛɪᴄᴋєʀ ᴘᴧᴄᴋ
 ❍ /st ➠ ғɪηᴅ ᴏʀɪɢɪηᴧʟ sᴛɪᴄᴋєʀ.
 
@@ -367,7 +367,7 @@ class Helper(object):
 **❍ /git ➠ ғɪηᴅ ʀєᴘᴏ ɢɪᴛ ᴜsєʀηᴧϻє
 ❍ /allrepo ➠ sєє ᴧʟʟ ʀєᴘᴏ ᴛʜʀσᴜɢʜ ɢɪᴛ ᴜsєʀηᴧϻє**
 
-`єxᴧϻᴘʟє : /git TOXICPAPA`
+`єxᴧϻᴘʟє : /git username`
 
 **❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
 '''
