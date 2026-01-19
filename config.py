@@ -5,10 +5,10 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "25840622"))
-API_HASH = getenv("API_HASH", "6d9e9ab61c982f210e3b4d91067af333")
+API_ID = int(getenv("API_ID", None))
+API_HASH = getenv("API_HASH", None)
 
-BOT_TOKEN = getenv("BOT_TOKEN", "8073275446:AAEEy1gXEy9E8rejg4S18ZTVhyBJiAPkkSg")
+BOT_TOKEN = getenv("BOT_TOKEN", None)
 OWNER_USERNAME = getenv("OWNER_USERNAME","liar_neo")
 BOT_USERNAME = getenv("BOT_USERNAME" , "divinexmusic_bot")
 BOT_NAME = getenv("BOT_NAME" , "𝐘𝐓 ꭙ ᴍᴜsɪᴄ˼ ㋛︎")
@@ -18,7 +18,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 LOGGER_ID = int(getenv("LOGGER_ID", -1003536603139))
 OWNER_ID = int(getenv("OWNER_ID", 1008989961))
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "snaxymng")
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", "HRKU-AAp0hjcbbnSDXzsdsFRbjdvQnXFDi4Th-QM9Sy9_r-iA_____wBZ45SCUkrG")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/txsn4x/snaxymng",)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
