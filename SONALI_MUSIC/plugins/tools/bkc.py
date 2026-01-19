@@ -19,6 +19,15 @@ BIGBALL = "https://i.gifer.com/8ZUg.gif"
 LANG = "https://telegra.ph/file/423414459345bf18310f5.gif"
 CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
 
+@app.on_message(filters.command("rand"))
+async def rand(_, message):
+    user_id = message.from_user.id
+    user_name = message.from_user.first_name
+    mention = f"[{user_name}](tg://user?id={user_id})"
+    mm = random.randint(1, 100)
+    RAND = f"**🍷** {mention} **ɪꜱ** {mm}**% ʀᴀɴᴅ!**"
+    await message.reply_text(RAND, reply_markup=BUTTON, disable_web_page_preview=True, quote=True)
+
 
 @app.on_message(filters.command("horny"))
 async def horny(_, message):
