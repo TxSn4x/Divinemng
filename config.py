@@ -21,7 +21,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "snaxymng")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/txsn4x/snaxymng",)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = getenv("GIT_TOKEN", None)
+GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 API_URL = getenv("API_URL", 'https://pytdbotapi.thequickearn.xyz') #youtube song url
 VIDEO_API_URL = getenv("VIDEO_API_URL", None)
