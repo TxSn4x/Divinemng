@@ -29,17 +29,23 @@ NEXI_VID = [
 
 
 
-@app.on_message(filters.command("slap"))
-async def slap(_, replied_user):
-    user_id = message.from_user.id
-    user_name = message.from_user.first_name
-       if message.reply_to_message:
+def handle_action(client, message: Message, action: str, action_name: str):
+    sender = message.from_user
+    sender_name = f"[{sender.first_name}](tg://user?id={sender.id})" 
+
+    if message.reply_to_message:
         replied_user = message.reply_to_message.from_user
         replied_user_name = f"[{replied_user.first_name}](tg://user?id={replied_user.id})"
-        msg = f"{sender_name} sent a {action_name} to {replied_user_name}! "
-    return await message.reply_video(
-                random.choice(NEXI_VID),
-    await message.reply_text(slap, reply_markup=BUTTON, disable_web_page_preview=True, quote=True)
+        msg = f"{sender_name} sent a {action_name} to {replied_user_name}! {message.reply_video(
+                random.choice(NEXI_VID),}"
+    else:
+        msg = f"{sender_name} sent a {action_name} to themselves! {action_info[action]['emoji']}"
+
+    response = requests.get(action_info[action]message.reply_video(
+                random.choice(NEXI_VID))
+    if response.status_code == 200:
+        gif_link = response.json()["url"]
+        client.send_animation(message.chat.id, animation=gif_link, caption=msg, parse_mode="markdown")
 
 
 
