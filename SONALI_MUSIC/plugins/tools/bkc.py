@@ -20,6 +20,31 @@ BIGBALL = "https://i.gifer.com/8ZUg.gif"
 LANG = "https://telegra.ph/file/423414459345bf18310f5.gif"
 CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
 
+#test
+
+NEXI_VID = [
+
+"https://files.catbox.moe/du8ylb.mp4", 
+]
+
+
+
+@app.on_message(filters.command("slap"))
+async def slap(_, replied_user):
+    user_id = message.from_user.id
+    user_name = message.from_user.first_name
+       if message.reply_to_message:
+        replied_user = message.reply_to_message.from_user
+        replied_user_name = f"[{replied_user.first_name}](tg://user?id={replied_user.id})"
+        msg = f"{sender_name} sent a {action_name} to {replied_user_name}! "
+    return await message.reply_video(
+                random.choice(NEXI_VID),
+    await message.reply_text(slap, reply_markup=BUTTON, disable_web_page_preview=True, quote=True)
+
+
+
+#test
+
 @app.on_message(filters.command("rand"))
 async def rand(_, message):
     user_id = message.from_user.id
