@@ -59,6 +59,9 @@
       }
     },
     "buildpacks": [
+        {
+   "stack": "heroku-22"
+}, 
           {
               "url": "heroku/python"
           },
